@@ -277,10 +277,6 @@ body :has(.navigation ul.menu.show) nav {
   border: none;
 }
 
-
-
-
-
 .navigation nav > ul > li > button {
   cursor: pointer;
   display: flex;
@@ -510,9 +506,7 @@ section.hero .content svg {
   inset-block-end: 15px;
 }
 
-/* 
-  About page 
-*/
+/* About page */
 
 section.info {
   margin: 0 var(--margin-sides);
@@ -891,7 +885,6 @@ section.members p {
   font-family: var(--font-primary);
   line-height: 1.42;
   color: var(--primary-color);
-
 }
 
 section.members .buttons .btn.secondary {
