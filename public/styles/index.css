@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 10em auto 10em;
+    margin: 5em auto 10em;
     width: 60%;
 
 }
@@ -12,7 +12,6 @@
     flex-direction: column;
     margin-top: 1em;
 }
-
 
 
 .hero button {
@@ -35,6 +34,11 @@ select {
     border: solid 2px var(--main-color);
 }
 
+label {
+    color: var(--main-color);
+    font-weight: bold;
+}
+
 #week-data label {
     font-weight: bold;
     color: var(--main-color);
@@ -42,7 +46,7 @@ select {
 }
 
 .shifts {
-   margin: 0.5em;
+    margin: 0.5em;
 }
 
 .week-data-zero-state {
@@ -113,21 +117,26 @@ select {
 }
 
 @media screen and (max-width: 1300px) {
-.hero {
-    width: 100%;
-    justify-content: center;
-}
+    .hero {
+        width: 100%;
+        justify-content: center;
+        margin-top: 5em;
+    }
 
     .hero-image {
-    display: none;
-}
+        display: none;
+    }
+
+    #week-data p {
+        font-size: 1.5em;
+    }
 
     .week-data-title {
         font-size: 2em;
     }
 
 
-    }
+}
 
 @media screen and (max-width: 750px) {
 
@@ -142,24 +151,45 @@ select {
 
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
+
+    .hero {
+        margin: 4.5em auto 1em;
+    }
 
     .hero h1 {
-        font-size: 2.5em;
+        font-size: 2.3em;
     }
 
     .show-week-button {
-        font-size: 1.6em;
+        font-size: 1.4em;
     }
 
     p {
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
 
     select {
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
 
+    #week-data p {
+        font-size: 1.3em;
+    }
+
+    #week-data h2 {
+        font-size: 2.2em;
+    }
+
+    .week-data-title {
+        text-align: center;
+        width: 60%;
+    }
+
+    .week-data-zero-state {
+        width: 7em;
+        height: 7em;
+    }
 
 
 }

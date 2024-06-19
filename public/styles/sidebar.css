@@ -150,6 +150,10 @@ ul {
        background-color: var(--main-color);
     }
 
+    .hamburger-menu {
+        background-color: transparent;
+    }
+
     nav {
         display: none;
     }
