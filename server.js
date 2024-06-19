@@ -99,6 +99,6 @@ app.get('/week/:weekId', function (request, response) {
 app.set('port', process.env.PORT || 8001);
 
 // Start express op en haal daarbij het ingestelde poortnummer op
-ap.listen(app.get('port'), function () {
+app.listen(app.get('port'), function () {
     console.log(`Application started on http://localhost:${app.get('port')}`);
 });
