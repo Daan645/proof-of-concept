@@ -66,19 +66,20 @@ header {
     width: 3em;
 }
 
-.hidden-checkbox:checked + header ul{
-    transform: translateX(-5.5em);
-    transition: 0.6s ease;
-}
+
 
 .hidden-checkbox:checked + header ul{
-    transform: translateX(-3em);
-    transition: 0.6s ease;
+    justify-content: center;
+
 }
 
 .hidden-checkbox:checked + header p{
-    opacity: 1;
+    display: flex;
     transition: 0.6s ease;
+}
+
+.hidden-checkbox:checked + header nav{
+
 }
 
 
@@ -112,7 +113,13 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
     margin-top: 30em;
+}
+
+nav p:hover {
+    scale: 1.1;
+    transition: 0.1s ease;
 }
 
 ul {
@@ -124,13 +131,46 @@ ul {
     display: flex;
     flex-direction: row;
     align-items: center;
-    transform: translateX(2.5em);
 }
 
 .nav-planner p {
-    opacity: 0;
+    display: none;
     color: #FFFF;
 }
+
+
+@media screen and (max-width: 750px) {
+
+    header {
+        background-color: transparent;
+        transition: 0.4s ease;
+    }
+
+    .hidden-checkbox:checked + header {
+       background-color: var(--main-color);
+    }
+
+    nav {
+        display: none;
+    }
+
+    .hidden-checkbox:checked + header nav{
+display: flex;
+    }
+
+    @keyframes menuAnimation {
+        from {
+            width: 6em;
+        }
+        to {
+            width: 100vw;
+        }
+    }
+
+
+}
+
+
 
 
 

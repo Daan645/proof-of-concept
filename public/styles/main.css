@@ -68,7 +68,7 @@ button {
 }
 
 
-.primairy-button {
+.show-week-button {
     background-color: var(--important-color);
     color: var(--main-color);
     padding: 0.2em 2em 0.2em 2em;

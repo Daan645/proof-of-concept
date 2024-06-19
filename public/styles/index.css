@@ -2,8 +2,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 2em auto 3em;
-    width: 80%;
+    margin: 10em auto 10em;
+    width: 60%;
 
 }
 
@@ -105,6 +105,13 @@ select {
     margin-top: 1em;
 }
 
+
+@media screen and (max-width: 1700px) {
+    .hero {
+        width: 80%;
+    }
+}
+
 @media screen and (max-width: 1300px) {
 .hero {
     width: 100%;
@@ -119,19 +126,40 @@ select {
         font-size: 2em;
     }
 
-    header{
-        background-color: transparent;
-    }
+
     }
 
 @media screen and (max-width: 750px) {
 
     .hero {
         width: 60%;
+        margin-bottom: 5em;
     }
 
     .week-data-title {
         font-size: 1.5em;
     }
+
+}
+
+@media screen and (max-width: 400px) {
+
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .show-week-button {
+        font-size: 1.6em;
+    }
+
+    p {
+        font-size: 1.5em;
+    }
+
+    select {
+        font-size: 1.5em;
+    }
+
+
 
 }
