@@ -58,6 +58,7 @@
                         // Voeg tekstinhoud toe aan het <p> element met de naam en rol van de persoon
                         p.textContent = `${rp.name} - ${rp.role}`;
                         // Voeg het <p> element toe aan weekDataContainer
+                        p.classList.add('shifts');
                         weekDataContainer.appendChild(p);
                     });
                 });

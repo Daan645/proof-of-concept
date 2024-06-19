@@ -94,11 +94,17 @@ app.get('/week/:weekId', function (request, response) {
         });
 });
 
+// Route voor vakantie dag
+app.get('/vakantie-dagen', function (request, response) {
+
+response.render('vacation.ejs')
+});
+
 
 // Stel de poort in waarop de server luistert
 app.set('port', process.env.PORT || 8001);
 
 // Start express op en haal daarbij het ingestelde poortnummer op
-ap.listen(app.get('port'), function () {
+app.listen(app.get('port'), function () {
     console.log(`Application started on http://localhost:${app.get('port')}`);
 });

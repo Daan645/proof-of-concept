@@ -41,7 +41,9 @@ select {
     font-size: 1.8em;
 }
 
-
+.shifts {
+   margin: 0.5em;
+}
 
 .week-data-zero-state {
     margin-top: 0;
