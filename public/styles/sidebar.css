@@ -165,7 +165,7 @@ ul {
     .hidden-checkbox:checked + header nav{
 display: flex;
     }
-}
+
     @keyframes menuAnimation {
         from {
             width: 6em;
@@ -174,6 +174,9 @@ display: flex;
             width: 100vw;
         }
     }
+
+}
+
 
 
 
