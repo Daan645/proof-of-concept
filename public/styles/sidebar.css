@@ -4,7 +4,7 @@ header {
     left: 0;
     display: flex;
     flex-direction: column;
- align-items: center;
+    align-items: center;
     width: 6em;
     height: 100vh;
     background-color: var(--main-color);
@@ -113,8 +113,8 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 1em;
 
-    margin-top: 30em;
 }
 
 nav p:hover {
@@ -154,6 +154,10 @@ ul {
         background-color: transparent;
     }
 
+    .hidden-checkbox:checked + header .hamburger-menu{
+        background-color: white;
+    }
+
     nav {
         display: none;
     }
@@ -161,7 +165,7 @@ ul {
     .hidden-checkbox:checked + header nav{
 display: flex;
     }
-
+}
     @keyframes menuAnimation {
         from {
             width: 6em;
@@ -171,8 +175,6 @@ display: flex;
         }
     }
 
-
-}
 
 
 
