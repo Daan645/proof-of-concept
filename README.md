@@ -5,11 +5,10 @@
 <a href="https://proof-of-concept-eqsl.onrender.com/" alt="ANWB Weekplanner Website">Bekijk hier de website</a>
 
 ## 📄 Inhoudsopgave
-  ## 📄 Inhoudsopgave
 * [✏️ Beschrijving](#-beschrijving)
 * [💻 Gebruik](#-gebruik)
-* [🔍 Ontwerp](#-ontwerp)
-* [👾 Kenmerken](#-kenmerken)
+* [✍️ Ontwerp](#-ontwerp)
+* [🎮 Features](#-kenmerken)
 * [✅ Waar ben ik trots op?](#-waar-ben-ik-trots-op)
 * [❌ Waar liep ik tegen aan en hoe heb ik het opgelost?](#-waar-liep-ik-tegen-aan-en-hoe-heb-ik-het-opgelost)
 * [🎯 Wat wil ik nog maken?](#-wat-wil-ik-nog-maken)
@@ -33,7 +32,7 @@ Door op selecteer week te klikken krijg je een keuze menu waar je de gewenste we
 ## ✍️ Ontwerp
 Bij het ontwerp is volledig gebruikt gemaakt van het kleuren pallet uit de ANWB style guide zodat dit aansluit bij de huisstijl van de ANWB. Alle kleuren zijn toegevoegd in een :root en zijn dus makkelijk aantepassen indien nodig.
 
-## 👾 Features
+## 🎮 Features
 
 ### Responsive page
 Doormiddel van media queries is de pagina responsive en te gebruiken op elk scherm formaat!
