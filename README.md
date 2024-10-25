@@ -7,8 +7,8 @@
 ## 📄 Inhoudsopgave
 * [✏️ Beschrijving](#-beschrijving)
 * [💻 Gebruik](#-gebruik)
-* [✍️ Ontwerp](#-ontwerp)
-* [🎮 Features](#-kenmerken)
+* [🔎 Ontwerp](#-ontwerp)
+* [🎮 Features](#-features)
 * [✅ Waar ben ik trots op?](#-waar-ben-ik-trots-op)
 * [❌ Waar liep ik tegen aan en hoe heb ik het opgelost?](#-waar-liep-ik-tegen-aan-en-hoe-heb-ik-het-opgelost)
 * [🎯 Wat wil ik nog maken?](#-wat-wil-ik-nog-maken)
@@ -29,7 +29,7 @@ Door op selecteer week te klikken krijg je een keuze menu waar je de gewenste we
 
 ![ANWB-Demo](https://github.com/Daan645/proof-of-concept/assets/54812898/78ac4d4d-ed8e-4420-869d-9344525a4d18)
 
-## ✍️ Ontwerp
+## 🔎 Ontwerp
 Bij het ontwerp is volledig gebruikt gemaakt van het kleuren pallet uit de ANWB style guide zodat dit aansluit bij de huisstijl van de ANWB. Alle kleuren zijn toegevoegd in een :root en zijn dus makkelijk aantepassen indien nodig.
 
 ## 🎮 Features
