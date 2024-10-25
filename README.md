@@ -1,19 +1,25 @@
-> _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
-
-# ANWB Planner Tool
+# 🚗 ANWB Planner Tool
 ![mcbookAnwb](https://github.com/Daan645/proof-of-concept/assets/54812898/1c800fb9-3165-4d2c-9c8d-4cccba917fbc)
 
-## Inhoudsopgave
-  * [✏️ Beschrijving](#beschrijving)
-  * [💻 Gebruik](#gebruik)
-  * [🔎 Kenmerken](#kenmerken)
-  * [🔧 Installatie](#installatie)
-  * [🗝️ Licentie](#licentie)
+## 🔗 Link naar website
+<a href="https://proof-of-concept-eqsl.onrender.com/" alt="ANWB Weekplanner Website">Bekijk hier de website</a>
+
+## 📄 Inhoudsopgave
+  ## 📄 Inhoudsopgave
+* [✏️ Beschrijving](#-beschrijving)
+* [💻 Gebruik](#-gebruik)
+* [🔍 Ontwerp](#-ontwerp)
+* [👾 Kenmerken](#-kenmerken)
+* [✅ Waar ben ik trots op?](#-waar-ben-ik-trots-op)
+* [❌ Waar liep ik tegen aan en hoe heb ik het opgelost?](#-waar-liep-ik-tegen-aan-en-hoe-heb-ik-het-opgelost)
+* [🎯 Wat wil ik nog maken?](#-wat-wil-ik-nog-maken)
+* [📡 Tech stack](#-tech-stack)
+* [🧰 Tools](#-tools)
+* [🔧 Installatie](#-installatie)
+* [🔓 Licentie](#-licentie)
 
 ## ✏️ Beschrijving
-Maak voor de ANWB een planner tool, waarmee er per week piket diensten geplant en bekeken kunnen worden. Zowel de naam als functie moet zichtbaar zijn in de week planning. 
-<!-- Voeg een mooie poster visual toe 📸 -->
-<a href="https://proof-of-concept-eqsl.onrender.com/" alt="ANWB Weekplanner Website">Bekijk hier de website</a>
+Planner voor de ANWB waarop zij op weekbasis de piket diensten in moeten plannen en kunnen bekijken.
 
 ## 💻 Gebruik
 <!-- Bij Gebruik staat de user story, hoe het werkt en wat je er mee kan. -->
@@ -24,44 +30,62 @@ Door op selecteer week te klikken krijg je een keuze menu waar je de gewenste we
 
 ![ANWB-Demo](https://github.com/Daan645/proof-of-concept/assets/54812898/78ac4d4d-ed8e-4420-869d-9344525a4d18)
 
-## 🔎 Kenmerken
-
-### Ontwerp
+## ✍️ Ontwerp
 Bij het ontwerp is volledig gebruikt gemaakt van het kleuren pallet uit de ANWB style guide zodat dit aansluit bij de huisstijl van de ANWB. Alle kleuren zijn toegevoegd in een :root en zijn dus makkelijk aantepassen indien nodig.
 
-### Features
+## 👾 Features
 
-#### Responsive page
+### Responsive page
 Doormiddel van media queries is de pagina responsive en te gebruiken op elk scherm formaat!
 
-#### Volledig toegankelijk menu
+### Volledig toegankelijk menu
 Het menu is volledig met html css gemaakt waardoor deze ook werkend is op apparaten zonder javascript. Ik heb hierbij gebruik gemaakt van een input.
 
-#### Image optimalisatie (layout shifting)
+### Image optimalisatie (layout shifting)
 Ik heb de images een standaard width en height gegeven zodat dit layout shifting voorkomt.
 
-#### API optimalisatie
+### API optimalisatie
 Ik haal alleen de benodigde velden uit de API waardoor de website sneller is.
 
-#### Dropdown week keuze menu
+### Dropdown week keuze menu
 Ik heb een dropdown gemaakt waarin je alle weeknummers kunt selecteren, deze weeknummers worden allemaal uit de API opgehaald en is dus geheel dynamisch
 
-#### Week planning bekijken
+### Week planning bekijken
 Door middel van prevent default kun je de weekplanning op dezelfde pagina bekijken zonder deze te hoeven herladen. Alle namen, rollen, weken en assesments zijn uit de API opgehaald en worden dus automatisch bijgewerkt wanneer deze dat ook in de API zijn.
 
-### Technieken
+## ✅ Waar ben ik trots op?
+### Toegankelijk hamburger menu
+Ik heb een hamburger menu gemaakt zonder js te gebruiken dit heb ik voorelkaar gekregen met een verborgen input. Door het op deze manier te doen werkt het menu nogsteeds met zonder js.
+
+### Server peformance / alle medewerkers ophalen, tegelijkertijd de weken en de diensten ophalen
+Dit was erg ingewikkeld aangezien ik weinig ervaring had met directus en ik met koppel tabellen moest werken. Na veel stoeien is het mij gelukt om zo te filteren dat ik alleen de data heb die ik nodig heb zodat de website lekker vlot blijft!
+
+## ❌ Waar liep ik tegen aan en hoe heb ik het opgelost?
+### Alle medewerkers ophalen, tegelijkertijd de weken en de diensten ophalen
+Ik liep hier erg tegen aan omdat directus vrij nieuw voor mij was. Wel begreep ik de logica al een beetje omdat ik eerder met MYSQL heb gewerkt. Om dit optelossen heb ik hulp gevraagd bij een docent die liet mij zien dat directus een filter functie heeft. Na te testen en experimenteren welke json data ik terug kreeg was het mij uiteindelijk gelukt.
+
+### Server peformance
+Tijdens het ophalen van alle data die ik nodig had merkte ik dat ik bijna alle gegevens in de hele database meenam. Ik heb toen verder geëxperimenteerd om zo uiteindelijk alleen de data op te halen die ik daadwerkelijk nodig had.
+
+## 🎯 Wat wil ik nog maken?
+- Dashboard om mensen in te plannen
+- Vakantie planner
+- Kalender view op home
+- Ruilen van dienst
+  
+## 📡 Tech stack
 - HTML
 - CSS
 - JS
 - EJS
 - Express
+- Directus
 
-### Tools
+## 🧰 Tools
 - PHP storm
 - Render
 
 ## 🔧 Installatie
-<!-- Bij Instalatie staat hoe een andere developer aan jouw repo kan werken -->
 1. Clone deze repository
 2. Open de repository met een code editor naar keuze
 3. Open het terminal in de code editor
@@ -69,6 +93,6 @@ Door middel van prevent default kun je de weekplanning op dezelfde pagina bekijk
 5. Gebruik de link <a href="http://localhost:8001/">http://localhost:8001/</a> om het project lokaal te bekijken
 6. Mocht je het project online bekijken dan kan dat via <a href="https://proof-of-concept-eqsl.onrender.com/" alt="ANWB Weekplanner Website">deze link.</a>
 
-## Licentie
+## 🔓 Licentie
 
 This project is licensed under the terms of the [MIT license](./LICENSE).
